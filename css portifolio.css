@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+
+:root {
+    --gradiente: linear-gradient(135deg, #ff69b4, #ff1493);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CABEÇALHO IGUAL EM TODAS AS PAGINAS*/
+body {
+    font-family: "Molle", cursive;
+    color: black;
+    line-height: 1.6;
+    background-color: rgb(240, 239, 236);
+}
+
+header {
+    background-color: rgb(139, 28, 28);
+    color: rgb(221, 212, 161);
+    text-align: center;
+    padding-top: 0;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid rgb(221, 212, 161);
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+/* MENU DE NAVEGAÇÃO */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(221, 212, 161);
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color:rgb(100, 20, 20);
+    text-decoration: none;
+}
+
+a:visited {
+    color: 
+}
+
+a:hover {
+    color: rgb(156, 95, 95);
+}
+/* Destaca no menu a pagina em que o usuário está */
+nav a.ativo {
+    color: rgb(255, 245, 186);;
+    border-bottom: 2px solid rgb(255, 245, 186);
+}
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: rgb(221, 212, 161);
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: rgb(139, 28, 28);
+    margin-bottom: 12px;
+    border-bottom: 2px solid rgb(139, 28, 28);
+    padding-bottom: 8px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+/* Grade de link da página inicial */
+.grade-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cartao-link {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(246, 247, 248);
+    padding: 16px;
+    text-decoration: none;
+    color: rgb(139, 28, 28);
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+
+    /* animação */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-link:hover {
+    background-color: rgb(255, 251, 228);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(238, 218, 162, 0.25);
+}
+
+.cartao-link h3 {
+    color: rgb(90, 60, 26);
+    margin-bottom: 6px;
+}
+
+
+.card {
+    background-color:rgb(241, 239, 223);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    color:rgb(139, 28, 28);
+    margin-bottom: 8px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: rgb(139, 28, 28);
+    font-weight: bold;
+}
+
+
+
